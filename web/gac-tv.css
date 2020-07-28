@@ -55,5 +55,9 @@ img:last-child {
 
 .singleBroadcastCard {
     border-bottom: 1px solid black;
-    padding: 20px 10px;
+    padding: 20px;
+}
+
+.singleBroadcastCard-durationContent{
+    color: red !important;
 }
