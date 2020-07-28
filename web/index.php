@@ -1,25 +1,18 @@
+
+
 <?php
 
-require('../vendor/autoload.php');
+// https://files.000webhost.com/
+$timestamp = mt_rand(0, 100);
 
-$app = new Silex\Application();
-$app['debug'] = true;
+$content = file_get_contents('https://www.programme-tv.net/programme/chaine/programme-golfplus-189.html?'.$timestamp);
+// $content = str_replace('</title>','</title><base href="https://www.programme-tv.net/" />', $content);
+$content = str_replace('</head>','
+<link rel="stylesheet" href="https://www.programme-tv.net/telfront/desktop/assets/styles/0.19194f4c31a23f572aa9.css" />
+<link rel="stylesheet" href="https://www.programme-tv.net/telfront/desktop/assets/styles/rwd-epg-channel.19194f4c31a23f572aa9.css" />
+<link rel="stylesheet" href="https://delphinecoiffure.000webhostapp.com/gac-tv.css" />
 
-// Register the monolog logging service
-$app->register(new Silex\Provider\MonologServiceProvider(), array(
-  'monolog.logfile' => 'php://stderr',
-));
+</head>', $content);
+echo $content;
 
-// Register view rendering
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
-    'twig.path' => __DIR__.'/views',
-));
-
-// Our web handlers
-
-$app->get('/', function() use($app) {
-  $app['monolog']->addDebug('logging output.');
-  return $app['twig']->render('gac-tv.twig');
-});
-
-$app->run();
+?>
