@@ -1,0 +1,45 @@
+.timeNavigation,
+.containerAds,
+.ads-banniereHaute,
+.singleBroadcastCard-arrow {
+    display: none !important;
+}
+
+header,
+footer {
+    display: none !important;
+}
+
+.gridChannel-description,
+.gridChannel-rightColumn,
+.singleBroadcastCard-imageWrapper,
+.linksBooster,
+.footer-prismashop {
+    display: none !important;
+}
+
+img:last-child {
+    display: none !important;
+}
+
+.gridChannel-titleWrapper {
+    background: #061743 !important;
+    padding: 20px !important;
+    position: fixed !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    top: 0 !important;
+}
+
+.gridChannel-titleWrapper .pictureTagGenerator {
+    display: none !important;
+}
+
+.gridChannel-titleWrapper span {
+    font-size: 1.3em !important;
+    color: #aaadca !important;
+}
+
+.gridChannel {
+    padding-top: 60px !important;
+}
