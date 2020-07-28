@@ -49,15 +49,21 @@ img:last-child {
     color: #aaadca !important;
 }
 
-.gridChannel {
+/* .gridChannel {
     padding-top: 60px !important;
 }
 
 .singleBroadcastCard {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .singleBroadcastCard-durationContent{
     color: red !important;
 }
+
+.singleBroadcastCard-hour{
+    color: #ff9c00 !important;
+} */
