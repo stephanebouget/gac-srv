@@ -1,3 +1,7 @@
+body {
+    margin: 0 !important;
+}
+
 .timeNavigation,
 .containerAds,
 .ads-banniereHaute,
@@ -44,7 +48,7 @@ img:last-child {
     padding-top: 60px !important;
 }
 
-.singleBroadcastCard{
+.singleBroadcastCard {
     border-bottom: 1px solid black;
     padding: 20px 10px;
 }
